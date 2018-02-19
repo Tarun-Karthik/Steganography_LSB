@@ -1,7 +1,7 @@
 target=imread('secret.bmp');
         n=size(target);
-txtsz=target(n(1),n(2),1);% Text Size
-        width=target(n(1),n(2),2);% Image's Width
+txtsz=target(n(1),n(2),1);  % Text Size
+        width=target(n(1),n(2),2);  % Image's Width
  
         i=1;j=1;k=1;
 while k<=txtsz
@@ -25,4 +25,4 @@ end
 fwrite(fid,char(R),'char');
 fclose(fid);
  
-helpdlg('data Retrivedsuccesfully in secret.txt');
+helpdlg('data Retrived succesfully in secret.txt');

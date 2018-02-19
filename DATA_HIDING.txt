@@ -48,4 +48,4 @@ imwrite(target,'secret.bmp','bmp');
 imshow(target)
  
 end
-helpdlg('data hided succesfully in secret.bmp');
+helpdlg('data hidden succesfully in secret.bmp');

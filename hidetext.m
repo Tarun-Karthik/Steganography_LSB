@@ -1,8 +1,9 @@
 function[red,green,blue]=hidetext(redc,greenc,bluec,text)
- red=bitand(redc,248);
-green=bitand(greenc,248);
-blue=bitand(bluec,252);
-txt=0;
+
+red=bitand(redc,248); %gets last three digits
+green=bitand(greenc,248); %gets last three digits
+blue=bitand(bluec,252); %gets last two digits
+
  if bitand(text,128)== 128
 red=bitor(red,4);
  end
